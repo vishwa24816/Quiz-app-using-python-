@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Paragraph Submission</title>
+</head>
+<body>
+    <h1>Paragraph Submission</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Generate Quiz</button>
+    </form>
+</body>
+</html>
