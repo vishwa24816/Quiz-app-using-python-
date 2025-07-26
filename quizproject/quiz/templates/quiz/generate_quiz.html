@@ -2,13 +2,29 @@
 <html>
 <head>
     <title>Generated Quiz</title>
+    <link rel="stylesheet" type="text/css" href="/static/quiz/style.css">
 </head>
 <body>
-    <h1>Generated Quiz</h1>
-    <ul>
-        {% for question in questions %}
-            <li>{{ question }}</li>
-        {% endfor %}
-    </ul>
+    <div class="container">
+        <h1>Generated Quiz</h1>
+        <h2>All Sentences as Questions</h2>
+        <ul>
+            {% for question in questions %}
+                <li>{{ question }}</li>
+            {% endfor %}
+        </ul>
+        <h2>Statements Turned Into Questions</h2>
+        <ul>
+            {% for question in simple_questions %}
+                <li>{{ question }}</li>
+            {% endfor %}
+        </ul>
+        <h2>Advanced NLP (Placeholder)</h2>
+        <ul>
+            {% for question in advanced_questions %}
+                <li>{{ question }}</li>
+            {% endfor %}
+        </ul>
+    </div>
 </body>
 </html>

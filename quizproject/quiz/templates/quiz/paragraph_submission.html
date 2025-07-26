@@ -2,13 +2,16 @@
 <html>
 <head>
     <title>Paragraph Submission</title>
+    <link rel="stylesheet" type="text/css" href="/static/quiz/style.css">
 </head>
 <body>
-    <h1>Paragraph Submission</h1>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Generate Quiz</button>
-    </form>
+    <div class="container">
+        <h1>Paragraph Submission</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Generate Quiz</button>
+        </form>
+    </div>
 </body>
 </html>
